@@ -23,9 +23,10 @@ public class BaseTest {
        // System.setProperty("webdriver.chrome.driver", "\\chromedriver\\chromedriver.exe");
         System.setProperty("webdriver.gecko.driver", "\\geckodriver.exe");
         FirefoxOptions firefoxOptions = new FirefoxOptions();
-        //this is for headless. if you need browser you should comment below line after disable comment driver.manage line.
+        //this is for headless. if you need browser you should comment below line after disable comment second line.
         firefoxOptions.setHeadless(true);
         driver = new FirefoxDriver(firefoxOptions);
+
         //driver.manage().window().maximize();
         //Thread.sleep(1500);
         wait = new WebDriverWait(driver, 30);
